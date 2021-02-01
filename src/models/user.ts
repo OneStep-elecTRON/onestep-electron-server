@@ -29,11 +29,28 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-interface USER extends mongoose.Document {
+export interface USER extends mongoose.Document {
   _id: string;
   username: string;
   email: string;
   password: string;
+  track: {
+    basic: {
+      progress: number;
+      quizScore: number;
+      totalQuizAnswered: number;
+    };
+    intermediate: {
+      progress: number;
+      quizScore: number;
+      totalQuizAnswered: number;
+    };
+    advanced: {
+      progress: number;
+      quizScore: number;
+      totalQuizAnswered: number;
+    };
+  };
 }
 
 const userModel = mongoose.model<USER>('users', userSchema);

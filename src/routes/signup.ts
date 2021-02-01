@@ -46,9 +46,6 @@ router.post('/signup', validationMiddleware(), async (req: express.Request, res:
           message: 'User signed up',
           data: {
             token,
-            id: createdUser._id,
-            username: createdUser.username,
-            email: createdUser.email,
           },
         });
         return;

@@ -5,6 +5,8 @@ import { json } from 'body-parser';
 import { signin } from './routes/signin';
 import { signup } from './routes/signup';
 import { progress } from './routes/progressBar';
+import { quiz } from './routes/quiz';
+import { getUser } from './routes/getUser';
 
 const dotenv = require('dotenv');
 const app = express();
@@ -24,9 +26,11 @@ dotenv.config();
 app.use(json());
 app.use(cors());
 
+app.use(getUser);
 app.use(signup);
 app.use(signin);
 app.use(progress);
+app.use(quiz);
 
 httpserver.listen(PORT, async () => {
   await mongoose.connect(

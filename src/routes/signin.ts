@@ -32,17 +32,12 @@ router.post('/signin', validationMiddleware(), async (req: express.Request, res:
           expiresIn: '24h',
         }
       );
-      res
-        .status(201)
-        .json({
-          message: 'User logged in',
-          data: {
-            token,
-            id: isUserEmailAvai._id,
-            username: isUserEmailAvai.username,
-            email: isUserEmailAvai.email,
-          },
-        });
+      res.status(201).json({
+        message: 'User logged in',
+        data: {
+          token,
+        },
+      });
     });
   } catch (err) {
     res.status(400).json(err.message);
