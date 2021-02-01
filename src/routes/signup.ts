@@ -42,7 +42,15 @@ router.post('/signup', validationMiddleware(), async (req: express.Request, res:
             expiresIn: '24h',
           }
         );
-        res.status(201).json({ message: 'User created', token });
+        res.status(201).json({
+          message: 'User signed up',
+          data: {
+            token,
+            id: createdUser._id,
+            username: createdUser.username,
+            email: createdUser.email,
+          },
+        });
         return;
       }
     });

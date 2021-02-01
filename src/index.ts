@@ -4,11 +4,20 @@ import cors from 'cors';
 import { json } from 'body-parser';
 import { signin } from './routes/signin';
 import { signup } from './routes/signup';
+import { progress } from './routes/progressBar';
 
 const dotenv = require('dotenv');
 const app = express();
 const httpserver = require('http').createServer(app);
 const PORT = process.env.PORT || 4000;
+
+declare global {
+  namespace Express {
+    interface Request {
+      user: any;
+    }
+  }
+}
 
 dotenv.config();
 
@@ -17,6 +26,7 @@ app.use(cors());
 
 app.use(signup);
 app.use(signin);
+app.use(progress);
 
 httpserver.listen(PORT, async () => {
   await mongoose.connect(
