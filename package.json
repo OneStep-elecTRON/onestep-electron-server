@@ -31,6 +31,6 @@
     "ts-node-dev": "^1.1.1"
   },
   "scripts": {
-    "start": "node src/index.ts"
+    "start": "node dist/index.js"
   }
 }
