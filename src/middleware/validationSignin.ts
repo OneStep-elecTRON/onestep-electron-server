@@ -2,7 +2,6 @@ import { body } from 'express-validator';
 
 export default module.exports = () => {
   return [
-    body('username').trim().blacklist(' ').toLowerCase(),
     body('email').isEmail().withMessage('Something went wrong with EMAIL'),
     body('password')
       .trim()

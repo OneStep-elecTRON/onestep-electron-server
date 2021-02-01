@@ -10,10 +10,22 @@ const userSchema = new mongoose.Schema({
     match: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
   },
   password: { type: mongoose.Schema.Types.String, required: true },
-  progress: {
-    basic: { type: mongoose.Schema.Types.Number, default: 0 },
-    intermediate: { type: mongoose.Schema.Types.Number, default: 0 },
-    advanced: { type: mongoose.Schema.Types.Number, default: 0 },
+  track: {
+    basic: {
+      progress: { type: mongoose.Schema.Types.Number, default: 0 },
+      quizScore: { type: mongoose.Schema.Types.Number, default: 0 },
+      totalQuizAnswered: { type: mongoose.Schema.Types.Number, default: 0 },
+    },
+    intermediate: {
+      progress: { type: mongoose.Schema.Types.Number, default: 0 },
+      quizScore: { type: mongoose.Schema.Types.Number, default: 0 },
+      totalQuizAnswered: { type: mongoose.Schema.Types.Number, default: 0 },
+    },
+    advanced: {
+      progress: { type: mongoose.Schema.Types.Number, default: 0 },
+      quizScore: { type: mongoose.Schema.Types.Number, default: 0 },
+      totalQuizAnswered: { type: mongoose.Schema.Types.Number, default: 0 },
+    },
   },
 });
 
