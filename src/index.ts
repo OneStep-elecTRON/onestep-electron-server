@@ -34,7 +34,8 @@ app.use(quiz);
 
 httpserver.listen(PORT, async () => {
   await mongoose.connect(
-    `mongodb+srv://itsaadarsh:${process.env.MONGO_PWD}@onestep-server.bhw4e.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
+    process.env.MONGO_URI ||
+      `mongodb+srv://itsaadarsh:${process.env.MONGO_PWD}@onestep-server.bhw4e.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
     { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true }
   );
   console.log('Connected to Database');
