@@ -1,13 +1,13 @@
 import express from 'express';
 import auth from '../middleware/auth';
-import userModel, { USER } from '../models/user';
+import userModel from '../models/user';
 
 const router = express.Router();
 
 router.patch('/quiz', auth, async (req: express.Request, res: express.Response) => {
   try {
     const { track, isCorrect }: { track: string; isCorrect: boolean } = req.body;
-    const oldUserData: USER = await userModel.findOne({ _id: req.user!.userid });
+    const oldUserData: any = await userModel.findOne({ _id: req.user!.userid });
     const filter = { _id: req.user!.userid };
     let update: {};
     if (track === 'basic') {

@@ -10,10 +10,10 @@ router.get('/', auth, async (req: express.Request, res: express.Response) => {
     res.status(201).json({
       message: `User Data`,
       data: {
-        id: user._id,
-        username: user.username,
-        email: user.email,
-        track: user.track,
+        id: user!._id,
+        username: user!.username,
+        email: user!.email,
+        track: user!.track,
       },
     });
   } catch (err) {

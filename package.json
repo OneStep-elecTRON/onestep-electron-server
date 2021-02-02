@@ -6,7 +6,9 @@
   "repository": "https://github.com/OneStep-elecTRON/onestep-server.git",
   "author": "Aadarsh <aadarsh-s@outlook.com>",
   "license": "MIT",
-  "engines": { "node": "12.18.3" },
+  "engines": {
+    "node": "12.18.3"
+  },
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
@@ -27,7 +29,6 @@
     "@types/express-validator": "^3.0.0",
     "@types/firebase": "^3.2.1",
     "@types/jsonwebtoken": "^8.5.0",
-    "@types/mongoose": "^5.10.3",
     "ts-node": "^9.1.1",
     "ts-node-dev": "^1.1.1"
   },
@@ -37,5 +38,5 @@
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku main"
-}
+  }
 }
