@@ -4,6 +4,8 @@
 
 Client-side: [Here](https://github.com/OneStep-elecTRON/onestep-electron.github.io)
 
+Content: [Here](https://github.com/OneStep-elecTRON/onestep-electron-content)
+
 ## 🧐 Why OneStep-elecTRON?
 
 - **Machine Learning Tracks** Learn machine learning from basic to advanced with hand-crafted and trusted content.
