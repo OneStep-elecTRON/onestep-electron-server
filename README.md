@@ -1,6 +1,6 @@
 # OneStep-elecTRON Server-Side
 
-[OneStep-elecTRON](https://github.com/OneStep-elecTRON/onestep-electron.github.io) is a free and open-source python and machine learning learning platform for everyone.
+[OneStep-elecTRON](https://github.com/OneStep-elecTRON/onestep-electron.github.io) is a free and open-source machine learning and python, learning platform for everyone.
 
 ## 🧐 Why OneStep-elecTRON?
 
