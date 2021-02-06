@@ -55,3 +55,7 @@ yarn deploy
 ```
 
 This command will deploy the server to heroku.
+
+## 🙈 Contributing
+
+Please read our [Contributing Guide](./CONTRIBUTING.md) before submitting a Pull Request to the project.
