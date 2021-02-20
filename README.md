@@ -26,6 +26,12 @@ OneStep Content Repo: [Here](https://github.com/OneStep-elecTRON/onestep-electro
 - [x] **Interactive Quizzes**: Track your learning with interactive quizzes, and get your answers right away.
 - [x] **Run on Colab Integration**: Practice and learn via hands-on exercises/tutorials in Google Colab Notebooks.
 
+## 🔴 Be Part of Our Community
+---
+<img alt="Discord" src="https://img.shields.io/badge/OneStep%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/>
+Join our Discord and be part of OneStep community. Feel free to interact with other community members and also get your doubts cleared regarding anything OneStep related. <br/>
+Link to the server - https://discord.com/invite/cwxfhByeBf
+
 ## 🎉 Requiremenets
 ---
 
